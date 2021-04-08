@@ -1,0 +1,171 @@
+/*
+
+Cody Harmon
+Final project
+
+*/
+/*Website body background and text colors*/
+* { box-sizing: border-box; }
+body { background-color: #A8D6FA; 
+	color: #152129;
+	margin: 0;}
+body { font-family: Verdana, Arial, sans-serif; }
+/*wrapper id selector*/
+#wrapper { background-color: #A8D6FA;
+	padding: 2em;}
+
+/*Header element settings*/
+header { background-color: #A8D6FA;
+	color: #152129; 
+	background-image: url(potsedit2.jpg); 
+	background-size: cover;
+	margin-top: 50px;
+	font-size: 150%;
+	min-height: 376px;}
+header a {text-decoration: none; }
+header a:link {color: #FFFFFF; }
+header a:visited {color: #FFFFFF; }
+header a:hover {color: #EDF5F5; }
+/*home class selector*/
+.home {max-height: 20vh;
+	padding-top: 2em; padding-left: 10%; }
+/*content class selector*/
+.content {height: 20vh;
+	padding-top: 2em;
+	padding-left: 10%; }
+/*nav element selector*/
+nav { position: fixed; top: 0; left: 0;
+	z-index: 9999;
+	width: 100%;
+	height: auto;
+	text-align: right;
+	background-color: #A3FBD5;
+	margin: 0;
+	padding-top: 0.5em;
+	padding-bottom: 1em;
+	padding-right: 0;}
+nav ul { list-style-type: none;
+	margin: 0;
+	padding-right: 2em;
+	font-size: 1.2em; }
+nav li { display: inline;
+	padding-left: 2em;
+	width: 30%;}
+nav a:link {color: #152129; }
+nav a:visited {color: #2CBD7F; }
+nav a:hover {color: #A26100; }
+nav a {text-decoration: none; }
+/*one third selector*/
+.onethird {float: left;
+	width: 33%;
+	padding-left: 2em;
+	padding-right: 2em; }
+/*section element selector*/
+section {padding-left: 0.5em;
+	padding-right: 0.5em;
+	margin: auto;
+	margin-top: 2em;}
+/*stirfry id selector*/
+#stirfry {height: 300px;
+	background-image: url(stirfry.jpg);
+	background-size: 100% auto;
+	background-repeat: no-repeat;}
+/*haystacks id selector*/
+#haystacks {height: 300px;
+	background-image: url(haystacks.jpg);
+	background-size: 100% auto;
+	background-repeat: no-repeat;}
+/*chicken id selector*/
+#chicken {height: 300px;
+	background-image: url(chicken.jpg);
+	background-size: 100% auto;
+	background-repeat: no-repeat;}	
+/*puppychow id selector*/
+#puppychow {height: 500px;
+	background-image: url(puppychow4.jpg);
+	background-size: 50% 50%;
+	background-repeat: no-repeat;}
+/*flow id selector*/
+#flow {display: block;}
+/*setting h2 margins to 0*/
+h2  {margin: 0}
+h3 {text-align: center;}
+/*footer attributes*/
+footer { font-size: small;
+	font-style: italic;
+	text-align: center;
+	clear: right; }
+li { font-size: 90% }
+dd { font-size: 90% }
+/*table attibutes*/
+table { margin-bottom: 1em; border: 1px solid #152129; min-width: 400px; border-collapse: collapse;}
+td, th { border: 1px solid #152129; padding: 0.5em;}
+tr:nth-of-type(even) { background-color: #C0E2FC; }
+tr:nth-of-type(odd) { background-color: #A3FBD5; }
+caption { margin: 1em; font-weight: bold; font-size: 120%; }
+/*form display attibutes*/
+form { display: flex; 
+   flex-flow: column nowrap; }    
+input, datalist textarea { margin-bottom: .5em; }
+/*@media query for medium screen sizes*/
+@media (min-width: 600px){
+	nav ul {display: flex;
+	flex-wrap: nowrap;
+	justify-content: flex-end;}
+	nav li {width: 7em}
+	section {padding-left: 2em;
+	padding-right: 2em}
+	#stirfry {height: 300px;
+	background-image: url(stirfry.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	display: block;
+	padding: 1em;}
+	#haystacks {height: 300px;
+	background-image: url(haystacks.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	display: block;
+	padding: 1em;}
+	#chicken {height: 300px;
+	background-image: url(chicken.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	display: block;
+	padding: 1em;}
+	/*loungehero id selector*/
+	#puppychow {height: 300px;
+	background-image: url(puppychow4.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	display: block;
+	padding: 1em}
+	#flow {display: flex;
+	flex-direction: row;}
+	form { width: 60%;
+	max-width: 40em;
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: 9em 1fr;
+	grid-gap: 1em;}
+	input[type="submit"] { grid-column: 2 / 2; width: 9em; }
+	}
+/*media query for large screen sizes*/
+@media (min-width: 1024px){
+	header {font-size: 120%;}
+	nav {font-weight: bold;}
+	.home {height: 50vh;
+	padding-top: 5em;
+	padding-left: 8em;}
+	.content {height: 30vh;
+	padding-top: 2em;
+	padding-left: 8em;}
+	#wrapper {margin: auto;
+	width: 80%}
+	}
+/*media query for small screens for onethird selector*/
+@media (max-width: 600px){
+	.onethird {width: 100%;}
+	}
+
+
